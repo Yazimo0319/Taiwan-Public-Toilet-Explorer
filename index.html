@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>台灣公廁地圖</title>
+    <link href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.1/dist/maplibre-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@6.0.0/dist/echarts.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.1/dist/maplibre-gl.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body id="main">
+    <div id="page">
+        <!-- 頁首：左側標題、右側縣市選單。 -->
+        <div id="header">
+            <div id="titleArea">
+                <h1>台灣公廁地圖</h1>
+                <p class="subtitle">Taiwan Public Toilet Map</p>
+            </div>
+            <div id="countyArea">
+                <label for="countySelect">選擇縣市</label>
+                <select id="countySelect" name="county" disabled>
+                    <option value="65000" selected>新北市</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 資料筆數由 stats.json 更新。 -->
+        <div id="infoArea">
+            <div class="infoBox">
+                <h2>公廁資料筆數</h2>
+                <p id="recordCount" class="infoValue">尚未載入</p>
+            </div>
+        </div>
+
+        <p id="insightText" class="insightText" aria-live="polite"></p>
+
+        <p id="loadStatus" role="status">正在載入新北市統計資料…</p>
+
+        <p id="mapStatus" role="status">正在讀取新北市地圖資料…</p>
+
+        <!-- 沿用老師的三個容器名稱，左 60%、右 40%。 -->
+        <div id="chartArea">
+            <div id="mainChart" class="chartBox" aria-labelledby="mapTitle">
+                <h2 id="mapTitle">公廁地圖</h2>
+                <p class="placeholder">地圖顯示區域</p>
+            </div>
+            <!-- 這兩個容器由 ECharts 繪製標題與圖表。 -->
+            <div id="rightUpChart" class="chartBox" role="img" aria-label="新北市公廁類型水平長條圖，包含未設定類型">正在載入長條圖…</div>
+            <div id="rightDownChart" class="chartBox" role="img" aria-label="新北市場所類別圓環圖，含各類別筆數及比例">正在載入圓環圖…</div>
+        </div>
+
+        <p class="sourceNote">資料來源：<a href="https://data.moenv.gov.tw/dataset/detail/FAC_P_07" target="_blank" rel="noopener noreferrer">環境部全國公廁建檔資料</a></p>
+    </div>
+</body>
+</html>
+
+

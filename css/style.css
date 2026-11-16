@@ -1,0 +1,213 @@
+/* 將 padding 和 border 算在 width、height 之內，避免 60% + 40% 超出一列。 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f6f6;
+    color: #343e42;
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    line-height: 1.6;
+}
+
+#page {
+    width: 94%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 28px 0;
+}
+
+/* overflow: hidden 讓外層容器包住內部 float 的區塊。 */
+#header {
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+#titleArea {
+    float: left;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.subtitle {
+    margin: 4px 0 0;
+    color: #637477;
+    font-size: 15px;
+}
+
+#countyArea {
+    float: right;
+    margin-top: 10px;
+}
+
+#countyArea label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#countySelect {
+    width: 160px;
+    padding: 10px 12px;
+    border: 1px solid #a4bfc0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #343e42;
+    font: inherit;
+}
+
+#countySelect:focus-visible {
+    outline: 2px solid #16858a;
+    outline-offset: 3px;
+}
+
+#infoArea {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.infoBox {
+    float: left;
+    width: 230px;
+    margin-right: 16px;
+    padding: 16px 20px;
+    border: 1px solid #cfdbdc;
+    border-left: 4px solid #16858a;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.infoBox h2 {
+    margin: 0;
+    color: #637477;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.infoValue {
+    margin: 8px 0 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 和課堂範例相同：左側占 60%，右上、右下各占 40%。 */
+#chartArea {
+    height: 720px;
+    overflow: hidden;
+}
+
+.chartBox {
+    padding: 20px;
+    border: 1px solid #c5d5d6;
+    background-color: #ffffff;
+}
+
+.chartBox h2 {
+    margin: 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #dceeed;
+    color: #236b70;
+    font-size: 18px;
+}
+
+#mainChart {
+    float: left;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    padding: 0;
+}
+
+/* 右上與右下使用相同的排版；內部標題由 ECharts 繪製。 */
+#rightUpChart,
+#rightDownChart {
+    float: left;
+    width: 40%;
+    height: 50%;
+    padding: 0;
+}
+
+.placeholder {
+    margin: 0;
+    padding-top: 85px;
+    color: #6b7e82;
+    text-align: center;
+    font-size: 16px;
+}
+
+#mainChart .placeholder {
+    padding-top: 230px;
+}
+
+#loadStatus {
+    color: #236b70;
+    overflow-wrap: anywhere;
+}
+
+#loadStatus[role="alert"] {
+    padding: 12px;
+    border: 1px solid #be675c;
+    background-color: #fff3f0;
+    color: #8c352b;
+}
+
+/* Mapbox 標題保留在地圖左上角。 */
+#mainChart #mapTitle {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    margin: 0;
+    padding: 8px 12px;
+    border: 0;
+    background-color: #ffffff;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+#mapStatus {
+    color: #236b70;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+#mapStatus[role="alert"] {
+    color: #8c352b;
+}
+
+.toiletPopup {
+    color: #343e42;
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    overflow-wrap: anywhere;
+}
+
+.toiletPopup h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.toiletPopup p {
+    margin: 4px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 只保留一段資料觀察與必要來源，避免重複狀態資訊。 */
+.insightText {
+    margin: 0 0 18px;
+    color: #236b70;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+.insightText:empty { display: none; }
+.sourceNote {
+    margin: 14px 0 0;
+    color: #637477;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+.sourceNote a { color: #236b70; }

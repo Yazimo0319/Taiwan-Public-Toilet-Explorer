@@ -1,0 +1,1006 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "unit": "建檔紀錄（筆），不是不同公廁場所數",
+    "source_csv": "data/raw/FAC_P_07_full_2026-10-28.csv",
+    "source_sha256": "c2f6728736448c0ddced6bd240b6ac1b5a365fc26e777b73808bbe15d3eea708",
+    "source_url": "https://data.moenv.gov.tw/dataset/detail/FAC_P_07",
+    "source_download_date": "2026-10-28",
+    "source_last_updated": "2026-10-17 01:16:28",
+    "county_reference": "data/reference/motc_county_codes_2026-10-28.json",
+    "county_reference_url": "https://link.motc.gov.tw/mainData/projectIndex",
+    "county_reference_version": "25.12.1",
+    "missing_category_value": "",
+    "coordinate_rule": "有限數字；經度 -180 至 180，緯度 -90 至 90；不對調或補值",
+    "coordinate_order": [
+      "longitude",
+      "latitude"
+    ],
+    "map_note": "通過範圍檢查不代表地址或現場位置已核實"
+  },
+  "national": {
+    "record_count": 46006,
+    "type_counts": {
+      "無障礙廁所": 7400,
+      "男廁所": 15741,
+      "混合廁所": 4550,
+      "女廁所": 16049,
+      "性別友善廁所": 886,
+      "親子廁所": 1371,
+      "未設定": 9
+    },
+    "type2_counts": {
+      "交通": 4125,
+      "商業營業場所": 12511,
+      "文化育樂活動場所": 6061,
+      "宗教禮儀場所": 1867,
+      "觀光地區及風景區": 3289,
+      "公園": 3529,
+      "社福機構、集會場所": 6069,
+      "民眾洽公場所": 7318,
+      "其他": 988,
+      "休閒娛樂場所": 248,
+      "": 1
+    },
+    "grade_counts": {
+      "特優級": 44256,
+      "優等級": 1249,
+      "普通級": 244,
+      "不合格": 257
+    },
+    "diaper": {
+      "value_counts": {
+        "0": 41420,
+        "1": 4488,
+        "4": 7,
+        "3": 17,
+        "2": 70,
+        "5": 2,
+        "10": 1,
+        "6": 1
+      },
+      "positive_count": 4586,
+      "zero_count": 41420,
+      "missing_count": 0,
+      "invalid_count": 0
+    },
+    "map_record_count": 45982,
+    "excluded_coordinate_count": 24
+  },
+  "counties": {
+    "09007": {
+      "county_name": "連江縣",
+      "record_count": 92,
+      "type_counts": {
+        "混合廁所": 20,
+        "男廁所": 26,
+        "女廁所": 26,
+        "無障礙廁所": 19,
+        "性別友善廁所": 1
+      },
+      "type2_counts": {
+        "交通": 32,
+        "觀光地區及風景區": 22,
+        "文化育樂活動場所": 9,
+        "社福機構、集會場所": 7,
+        "休閒娛樂場所": 2,
+        "": 1,
+        "宗教禮儀場所": 5,
+        "民眾洽公場所": 10,
+        "公園": 2,
+        "商業營業場所": 2
+      },
+      "grade_counts": {
+        "特優級": 92
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 83,
+          "1": 9
+        },
+        "positive_count": 9,
+        "zero_count": 83,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 92,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/09007.geojson"
+    },
+    "09020": {
+      "county_name": "金門縣",
+      "record_count": 353,
+      "type_counts": {
+        "男廁所": 125,
+        "女廁所": 128,
+        "無障礙廁所": 87,
+        "混合廁所": 3,
+        "性別友善廁所": 4,
+        "親子廁所": 6
+      },
+      "type2_counts": {
+        "交通": 86,
+        "宗教禮儀場所": 14,
+        "商業營業場所": 27,
+        "公園": 29,
+        "觀光地區及風景區": 81,
+        "文化育樂活動場所": 63,
+        "社福機構、集會場所": 19,
+        "民眾洽公場所": 33,
+        "其他": 1
+      },
+      "grade_counts": {
+        "特優級": 351,
+        "普通級": 2
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 290,
+          "1": 63
+        },
+        "positive_count": 63,
+        "zero_count": 290,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 353,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/09020.geojson"
+    },
+    "10002": {
+      "county_name": "宜蘭縣",
+      "record_count": 1173,
+      "type_counts": {
+        "無障礙廁所": 242,
+        "女廁所": 364,
+        "男廁所": 359,
+        "性別友善廁所": 15,
+        "混合廁所": 162,
+        "親子廁所": 31
+      },
+      "type2_counts": {
+        "交通": 90,
+        "宗教禮儀場所": 39,
+        "觀光地區及風景區": 173,
+        "商業營業場所": 440,
+        "公園": 142,
+        "文化育樂活動場所": 113,
+        "民眾洽公場所": 167,
+        "社福機構、集會場所": 9
+      },
+      "grade_counts": {
+        "特優級": 1150,
+        "優等級": 20,
+        "普通級": 3
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 975,
+          "1": 195,
+          "4": 2,
+          "2": 1
+        },
+        "positive_count": 198,
+        "zero_count": 975,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 1173,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10002.geojson"
+    },
+    "10004": {
+      "county_name": "新竹縣",
+      "record_count": 952,
+      "type_counts": {
+        "男廁所": 351,
+        "女廁所": 362,
+        "混合廁所": 42,
+        "無障礙廁所": 150,
+        "親子廁所": 37,
+        "性別友善廁所": 10
+      },
+      "type2_counts": {
+        "社福機構、集會場所": 68,
+        "民眾洽公場所": 219,
+        "交通": 85,
+        "商業營業場所": 181,
+        "宗教禮儀場所": 65,
+        "公園": 55,
+        "觀光地區及風景區": 149,
+        "文化育樂活動場所": 116,
+        "其他": 14
+      },
+      "grade_counts": {
+        "特優級": 949,
+        "不合格": 3
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 849,
+          "2": 1,
+          "1": 101,
+          "3": 1
+        },
+        "positive_count": 103,
+        "zero_count": 849,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 952,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10004.geojson"
+    },
+    "10005": {
+      "county_name": "苗栗縣",
+      "record_count": 819,
+      "type_counts": {
+        "混合廁所": 78,
+        "男廁所": 261,
+        "女廁所": 267,
+        "性別友善廁所": 53,
+        "無障礙廁所": 125,
+        "親子廁所": 35
+      },
+      "type2_counts": {
+        "商業營業場所": 185,
+        "公園": 78,
+        "交通": 117,
+        "宗教禮儀場所": 23,
+        "文化育樂活動場所": 104,
+        "觀光地區及風景區": 74,
+        "民眾洽公場所": 153,
+        "社福機構、集會場所": 80,
+        "其他": 5
+      },
+      "grade_counts": {
+        "特優級": 815,
+        "優等級": 4
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 718,
+          "1": 99,
+          "2": 2
+        },
+        "positive_count": 101,
+        "zero_count": 718,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 819,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10005.geojson"
+    },
+    "10007": {
+      "county_name": "彰化縣",
+      "record_count": 1565,
+      "type_counts": {
+        "男廁所": 413,
+        "混合廁所": 561,
+        "女廁所": 414,
+        "性別友善廁所": 21,
+        "無障礙廁所": 140,
+        "親子廁所": 16
+      },
+      "type2_counts": {
+        "民眾洽公場所": 348,
+        "其他": 8,
+        "觀光地區及風景區": 100,
+        "文化育樂活動場所": 180,
+        "公園": 119,
+        "交通": 58,
+        "商業營業場所": 496,
+        "社福機構、集會場所": 138,
+        "宗教禮儀場所": 118
+      },
+      "grade_counts": {
+        "特優級": 1560,
+        "優等級": 5
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 1524,
+          "1": 40,
+          "2": 1
+        },
+        "positive_count": 41,
+        "zero_count": 1524,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 1565,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10007.geojson"
+    },
+    "10008": {
+      "county_name": "南投縣",
+      "record_count": 1123,
+      "type_counts": {
+        "男廁所": 416,
+        "女廁所": 428,
+        "親子廁所": 34,
+        "混合廁所": 49,
+        "無障礙廁所": 186,
+        "性別友善廁所": 10
+      },
+      "type2_counts": {
+        "民眾洽公場所": 263,
+        "商業營業場所": 241,
+        "文化育樂活動場所": 139,
+        "觀光地區及風景區": 267,
+        "公園": 40,
+        "交通": 68,
+        "社福機構、集會場所": 79,
+        "宗教禮儀場所": 23,
+        "其他": 3
+      },
+      "grade_counts": {
+        "特優級": 1086,
+        "普通級": 3,
+        "優等級": 31,
+        "不合格": 3
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 1049,
+          "1": 70,
+          "2": 4
+        },
+        "positive_count": 74,
+        "zero_count": 1049,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 1123,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10008.geojson"
+    },
+    "10009": {
+      "county_name": "雲林縣",
+      "record_count": 954,
+      "type_counts": {
+        "男廁所": 354,
+        "女廁所": 359,
+        "混合廁所": 42,
+        "無障礙廁所": 155,
+        "親子廁所": 33,
+        "性別友善廁所": 10,
+        "未設定": 1
+      },
+      "type2_counts": {
+        "商業營業場所": 323,
+        "交通": 70,
+        "民眾洽公場所": 253,
+        "宗教禮儀場所": 17,
+        "其他": 18,
+        "觀光地區及風景區": 93,
+        "公園": 43,
+        "社福機構、集會場所": 58,
+        "文化育樂活動場所": 79
+      },
+      "grade_counts": {
+        "特優級": 891,
+        "優等級": 27,
+        "普通級": 19,
+        "不合格": 17
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 863,
+          "1": 89,
+          "2": 2
+        },
+        "positive_count": 91,
+        "zero_count": 863,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 954,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10009.geojson"
+    },
+    "10010": {
+      "county_name": "嘉義縣",
+      "record_count": 1412,
+      "type_counts": {
+        "男廁所": 509,
+        "混合廁所": 205,
+        "女廁所": 510,
+        "無障礙廁所": 160,
+        "親子廁所": 24,
+        "性別友善廁所": 4
+      },
+      "type2_counts": {
+        "觀光地區及風景區": 159,
+        "商業營業場所": 181,
+        "公園": 87,
+        "社福機構、集會場所": 328,
+        "交通": 84,
+        "宗教禮儀場所": 159,
+        "其他": 15,
+        "文化育樂活動場所": 133,
+        "民眾洽公場所": 266
+      },
+      "grade_counts": {
+        "特優級": 1411,
+        "優等級": 1
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 1356,
+          "1": 56
+        },
+        "positive_count": 56,
+        "zero_count": 1356,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 1412,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10010.geojson"
+    },
+    "10013": {
+      "county_name": "屏東縣",
+      "record_count": 1106,
+      "type_counts": {
+        "女廁所": 337,
+        "混合廁所": 317,
+        "男廁所": 331,
+        "無障礙廁所": 86,
+        "性別友善廁所": 20,
+        "親子廁所": 15
+      },
+      "type2_counts": {
+        "民眾洽公場所": 254,
+        "宗教禮儀場所": 20,
+        "公園": 96,
+        "文化育樂活動場所": 121,
+        "商業營業場所": 218,
+        "觀光地區及風景區": 91,
+        "其他": 32,
+        "交通": 80,
+        "社福機構、集會場所": 190,
+        "休閒娛樂場所": 4
+      },
+      "grade_counts": {
+        "特優級": 1105,
+        "不合格": 1
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 1003,
+          "1": 94,
+          "2": 7,
+          "3": 1,
+          "6": 1
+        },
+        "positive_count": 103,
+        "zero_count": 1003,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 1106,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10013.geojson"
+    },
+    "10014": {
+      "county_name": "臺東縣",
+      "record_count": 879,
+      "type_counts": {
+        "性別友善廁所": 40,
+        "男廁所": 279,
+        "混合廁所": 61,
+        "無障礙廁所": 188,
+        "女廁所": 283,
+        "親子廁所": 28
+      },
+      "type2_counts": {
+        "民眾洽公場所": 183,
+        "文化育樂活動場所": 99,
+        "觀光地區及風景區": 134,
+        "商業營業場所": 177,
+        "交通": 76,
+        "社福機構、集會場所": 110,
+        "公園": 35,
+        "宗教禮儀場所": 58,
+        "其他": 2,
+        "休閒娛樂場所": 5
+      },
+      "grade_counts": {
+        "特優級": 772,
+        "普通級": 8,
+        "優等級": 95,
+        "不合格": 4
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 800,
+          "1": 79
+        },
+        "positive_count": 79,
+        "zero_count": 800,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 879,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10014.geojson"
+    },
+    "10015": {
+      "county_name": "花蓮縣",
+      "record_count": 729,
+      "type_counts": {
+        "女廁所": 266,
+        "男廁所": 261,
+        "混合廁所": 32,
+        "性別友善廁所": 39,
+        "無障礙廁所": 116,
+        "親子廁所": 15
+      },
+      "type2_counts": {
+        "交通": 85,
+        "民眾洽公場所": 207,
+        "商業營業場所": 111,
+        "觀光地區及風景區": 156,
+        "公園": 28,
+        "社福機構、集會場所": 9,
+        "文化育樂活動場所": 121,
+        "宗教禮儀場所": 6,
+        "休閒娛樂場所": 6
+      },
+      "grade_counts": {
+        "特優級": 724,
+        "不合格": 5
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 640,
+          "1": 85,
+          "2": 4
+        },
+        "positive_count": 89,
+        "zero_count": 640,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 729,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10015.geojson"
+    },
+    "10016": {
+      "county_name": "澎湖縣",
+      "record_count": 391,
+      "type_counts": {
+        "男廁所": 134,
+        "女廁所": 135,
+        "無障礙廁所": 96,
+        "親子廁所": 11,
+        "混合廁所": 14,
+        "性別友善廁所": 1
+      },
+      "type2_counts": {
+        "交通": 96,
+        "公園": 35,
+        "宗教禮儀場所": 14,
+        "文化育樂活動場所": 48,
+        "商業營業場所": 42,
+        "社福機構、集會場所": 43,
+        "觀光地區及風景區": 82,
+        "其他": 7,
+        "民眾洽公場所": 24
+      },
+      "grade_counts": {
+        "特優級": 352,
+        "優等級": 38,
+        "不合格": 1
+      },
+      "diaper": {
+        "value_counts": {
+          "1": 57,
+          "0": 334
+        },
+        "positive_count": 57,
+        "zero_count": 334,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 391,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10016.geojson"
+    },
+    "10017": {
+      "county_name": "基隆市",
+      "record_count": 826,
+      "type_counts": {
+        "男廁所": 285,
+        "無障礙廁所": 144,
+        "女廁所": 290,
+        "混合廁所": 61,
+        "性別友善廁所": 28,
+        "親子廁所": 18
+      },
+      "type2_counts": {
+        "交通": 104,
+        "民眾洽公場所": 174,
+        "商業營業場所": 162,
+        "其他": 18,
+        "觀光地區及風景區": 35,
+        "公園": 51,
+        "社福機構、集會場所": 107,
+        "文化育樂活動場所": 143,
+        "宗教禮儀場所": 23,
+        "休閒娛樂場所": 9
+      },
+      "grade_counts": {
+        "特優級": 825,
+        "不合格": 1
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 773,
+          "1": 52,
+          "2": 1
+        },
+        "positive_count": 53,
+        "zero_count": 773,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 826,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10017.geojson"
+    },
+    "10018": {
+      "county_name": "新竹市",
+      "record_count": 848,
+      "type_counts": {
+        "男廁所": 278,
+        "無障礙廁所": 150,
+        "女廁所": 284,
+        "性別友善廁所": 40,
+        "混合廁所": 52,
+        "親子廁所": 44
+      },
+      "type2_counts": {
+        "商業營業場所": 326,
+        "文化育樂活動場所": 77,
+        "民眾洽公場所": 112,
+        "交通": 61,
+        "公園": 62,
+        "觀光地區及風景區": 118,
+        "社福機構、集會場所": 38,
+        "宗教禮儀場所": 52,
+        "休閒娛樂場所": 2
+      },
+      "grade_counts": {
+        "特優級": 848
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 687,
+          "1": 155,
+          "2": 5,
+          "4": 1
+        },
+        "positive_count": 161,
+        "zero_count": 687,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 848,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10018.geojson"
+    },
+    "10020": {
+      "county_name": "嘉義市",
+      "record_count": 701,
+      "type_counts": {
+        "男廁所": 258,
+        "女廁所": 262,
+        "混合廁所": 58,
+        "親子廁所": 17,
+        "無障礙廁所": 94,
+        "性別友善廁所": 12
+      },
+      "type2_counts": {
+        "商業營業場所": 252,
+        "文化育樂活動場所": 39,
+        "宗教禮儀場所": 17,
+        "民眾洽公場所": 54,
+        "公園": 98,
+        "其他": 65,
+        "交通": 17,
+        "社福機構、集會場所": 112,
+        "休閒娛樂場所": 35,
+        "觀光地區及風景區": 12
+      },
+      "grade_counts": {
+        "特優級": 701
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 633,
+          "1": 68
+        },
+        "positive_count": 68,
+        "zero_count": 633,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 701,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/10020.geojson"
+    },
+    "63000": {
+      "county_name": "臺北市",
+      "record_count": 7013,
+      "type_counts": {
+        "男廁所": 2284,
+        "無障礙廁所": 1168,
+        "女廁所": 2413,
+        "混合廁所": 649,
+        "親子廁所": 379,
+        "性別友善廁所": 117,
+        "未設定": 3
+      },
+      "type2_counts": {
+        "交通": 937,
+        "公園": 367,
+        "觀光地區及風景區": 208,
+        "商業營業場所": 2059,
+        "其他": 234,
+        "民眾洽公場所": 726,
+        "社福機構、集會場所": 914,
+        "文化育樂活動場所": 1399,
+        "宗教禮儀場所": 127,
+        "休閒娛樂場所": 42
+      },
+      "grade_counts": {
+        "特優級": 6971,
+        "不合格": 42
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 6448,
+          "1": 559,
+          "2": 5,
+          "3": 1
+        },
+        "positive_count": 565,
+        "zero_count": 6448,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 7013,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/63000.geojson"
+    },
+    "64000": {
+      "county_name": "高雄市",
+      "record_count": 4177,
+      "type_counts": {
+        "女廁所": 1540,
+        "男廁所": 1498,
+        "性別友善廁所": 46,
+        "無障礙廁所": 721,
+        "混合廁所": 288,
+        "親子廁所": 79,
+        "未設定": 5
+      },
+      "type2_counts": {
+        "民眾洽公場所": 686,
+        "社福機構、集會場所": 459,
+        "觀光地區及風景區": 252,
+        "其他": 99,
+        "公園": 437,
+        "交通": 341,
+        "文化育樂活動場所": 539,
+        "商業營業場所": 1137,
+        "宗教禮儀場所": 200,
+        "休閒娛樂場所": 27
+      },
+      "grade_counts": {
+        "特優級": 3919,
+        "優等級": 243,
+        "普通級": 2,
+        "不合格": 13
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 3473,
+          "1": 690,
+          "3": 5,
+          "2": 9
+        },
+        "positive_count": 704,
+        "zero_count": 3473,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 4177,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/64000.geojson"
+    },
+    "65000": {
+      "county_name": "新北市",
+      "record_count": 6143,
+      "type_counts": {
+        "男廁所": 2039,
+        "混合廁所": 861,
+        "女廁所": 2063,
+        "無障礙廁所": 963,
+        "性別友善廁所": 95,
+        "親子廁所": 122
+      },
+      "type2_counts": {
+        "商業營業場所": 1397,
+        "文化育樂活動場所": 775,
+        "宗教禮儀場所": 277,
+        "觀光地區及風景區": 287,
+        "交通": 673,
+        "公園": 480,
+        "社福機構、集會場所": 1313,
+        "民眾洽公場所": 877,
+        "其他": 60,
+        "休閒娛樂場所": 4
+      },
+      "grade_counts": {
+        "特優級": 5849,
+        "優等級": 266,
+        "普通級": 3,
+        "不合格": 25
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 5418,
+          "1": 713,
+          "4": 4,
+          "2": 7,
+          "3": 1
+        },
+        "positive_count": 725,
+        "zero_count": 5418,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 6143,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/65000.geojson"
+    },
+    "66000": {
+      "county_name": "臺中市",
+      "record_count": 6095,
+      "type_counts": {
+        "男廁所": 2157,
+        "女廁所": 2193,
+        "性別友善廁所": 124,
+        "親子廁所": 221,
+        "無障礙廁所": 1125,
+        "混合廁所": 275
+      },
+      "type2_counts": {
+        "交通": 392,
+        "民眾洽公場所": 886,
+        "商業營業場所": 2115,
+        "公園": 601,
+        "社福機構、集會場所": 753,
+        "文化育樂活動場所": 816,
+        "觀光地區及風景區": 323,
+        "休閒娛樂場所": 51,
+        "宗教禮儀場所": 158
+      },
+      "grade_counts": {
+        "特優級": 6057,
+        "優等級": 9,
+        "不合格": 29
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 5490,
+          "1": 587,
+          "2": 11,
+          "5": 2,
+          "3": 4,
+          "10": 1
+        },
+        "positive_count": 605,
+        "zero_count": 5490,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 6095,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/66000.geojson"
+    },
+    "67000": {
+      "county_name": "臺南市",
+      "record_count": 4829,
+      "type_counts": {
+        "男廁所": 1687,
+        "女廁所": 1679,
+        "混合廁所": 660,
+        "無障礙廁所": 620,
+        "性別友善廁所": 79,
+        "親子廁所": 104
+      },
+      "type2_counts": {
+        "民眾洽公場所": 793,
+        "文化育樂活動場所": 511,
+        "公園": 278,
+        "社福機構、集會場所": 797,
+        "交通": 202,
+        "商業營業場所": 1325,
+        "宗教禮儀場所": 259,
+        "觀光地區及風景區": 248,
+        "其他": 383,
+        "休閒娛樂場所": 33
+      },
+      "grade_counts": {
+        "特優級": 4094,
+        "優等級": 447,
+        "不合格": 84,
+        "普通級": 204
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 4541,
+          "1": 280,
+          "2": 5,
+          "3": 3
+        },
+        "positive_count": 288,
+        "zero_count": 4541,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 4829,
+      "excluded_coordinate_count": 0,
+      "geojson_path": "data/processed/geojson/67000.geojson"
+    },
+    "68000": {
+      "county_name": "桃園市",
+      "record_count": 3826,
+      "type_counts": {
+        "男廁所": 1436,
+        "女廁所": 1446,
+        "性別友善廁所": 117,
+        "無障礙廁所": 665,
+        "混合廁所": 60,
+        "親子廁所": 102
+      },
+      "type2_counts": {
+        "商業營業場所": 1114,
+        "交通": 371,
+        "民眾洽公場所": 630,
+        "宗教禮儀場所": 193,
+        "公園": 366,
+        "社福機構、集會場所": 438,
+        "觀光地區及風景區": 225,
+        "其他": 24,
+        "文化育樂活動場所": 437,
+        "休閒娛樂場所": 28
+      },
+      "grade_counts": {
+        "特優級": 3734,
+        "優等級": 63,
+        "不合格": 29
+      },
+      "diaper": {
+        "value_counts": {
+          "0": 3473,
+          "1": 347,
+          "2": 5,
+          "3": 1
+        },
+        "positive_count": 353,
+        "zero_count": 3473,
+        "missing_count": 0,
+        "invalid_count": 0
+      },
+      "map_record_count": 3802,
+      "excluded_coordinate_count": 24,
+      "geojson_path": "data/processed/geojson/68000.geojson"
+    }
+  }
+}
